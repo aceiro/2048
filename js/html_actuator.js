@@ -62,12 +62,39 @@ HTMLActuator.prototype.addTile = function (tile) {
   // We can't use classlist because it somehow glitches when replacing classes
   var classes = ["tile", "tile-" + tile.value, positionClass];
 
+  var imgElement  = document.createElement("img");
+  if ( tile.value == 2) {
+    imgElement.src  = "imgs/6.jpg";
+  }else if ( tile.value == 4) {
+    imgElement.src  = "imgs/1.jpg";
+  }else if ( tile.value == 8) {
+    imgElement.src  = "imgs/2.jpg";
+  }else if ( tile.value == 16) {
+    imgElement.src  = "imgs/3.jpg";
+  }else if ( tile.value == 32) {
+    imgElement.src  = "imgs/4.jpg";
+  }else if ( tile.value == 64) {
+    imgElement.src  = "imgs/5.jpg";
+  } else if ( tile.value == 128) {
+    imgElement.src  = "imgs/6.jpg";
+  } else if ( tile.value == 256) {
+    imgElement.src  = "imgs/7.jpg";
+  } else if ( tile.value == 512) {
+    imgElement.src  = "imgs/8.jpg";
+  } else if ( tile.value == 1024) {
+    imgElement.src  = "imgs/9.jpg";
+  } else if ( tile.value == 2048) {
+    imgElement.src  = "imgs/10.jpg";
+  }
+
+
   if (tile.value > 2048) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
-  inner.textContent = tile.value;
+  //inner.textContent = tile.value;
+  inner.appendChild(imgElement);
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
