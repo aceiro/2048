@@ -64,27 +64,27 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   var imgElement  = document.createElement("img");
   if ( tile.value == 2) {
-    imgElement.src  = "imgs/6.jpg";
-  }else if ( tile.value == 4) {
     imgElement.src  = "imgs/1.jpg";
-  }else if ( tile.value == 8) {
+  }else if ( tile.value == 4) {
     imgElement.src  = "imgs/2.jpg";
-  }else if ( tile.value == 16) {
+  }else if ( tile.value == 8) {
     imgElement.src  = "imgs/3.jpg";
-  }else if ( tile.value == 32) {
+  }else if ( tile.value == 16) {
     imgElement.src  = "imgs/4.jpg";
-  }else if ( tile.value == 64) {
+  }else if ( tile.value == 32) {
     imgElement.src  = "imgs/5.jpg";
-  } else if ( tile.value == 128) {
+  }else if ( tile.value == 64) {
     imgElement.src  = "imgs/6.jpg";
-  } else if ( tile.value == 256) {
+  } else if ( tile.value == 128) {
     imgElement.src  = "imgs/7.jpg";
-  } else if ( tile.value == 512) {
+  } else if ( tile.value == 256) {
     imgElement.src  = "imgs/8.jpg";
-  } else if ( tile.value == 1024) {
+  } else if ( tile.value == 512) {
     imgElement.src  = "imgs/9.jpg";
-  } else if ( tile.value == 2048) {
+  } else if ( tile.value == 1024) {
     imgElement.src  = "imgs/10.jpg";
+  } else if ( tile.value == 2048) {
+    imgElement.src  = "imgs/11.jpg";
   }
 
 
